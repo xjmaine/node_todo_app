@@ -2,7 +2,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "mysql2": "^3.12.0",
-    "node": "^23.5.0"
+    "node": "^23.5.0",
+    "to_do_node": "file:"
   },
   "name": "to_do_node",
   "version": "1.0.0",
