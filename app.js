@@ -1,13 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const route = require('./routes/route');
+const cors = require('cors')
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(bodyParser.json());
-// app.use('/api/v1/todos', route);
-app.use('', route);
+app.use('/api/v1/todos', route);
+// app.use('', route);
 
 //start server
 app.listen(port, () => {
